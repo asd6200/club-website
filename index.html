@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>College Club website</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #d8dce1; 
+            color: #05389e; 
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- SEMANTIC HEADER: Top banner containing the main title and introduction -->
+    <header class="bg-gray-900 text-white shadow-2xl p-6 border-b-4 border-indigo-500">
+        <div class="max-w-7xl mx-auto">
+            <!-- 1. GENERALIZED H1 -->
+            <h1 class="text-5xl font-extrabold tracking-tighter text-indigo-400">Collage CLUB Website</h1>
+            <p class="mt-2 text-gray-400 text-lg">college clubs</p>
+        </div>
+    </header>
+
+    <!-- SEMANTIC NAV: Primary navigation links (Generalized) -->
+    <nav class="bg-gray-800 shadow-xl sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <ul class="flex space-x-4 py-3 text-sm font-bold">
+                <li><a href="#welcome" class="text-white hover:text-indigo-400 px-3 py-2 rounded-lg transition duration-200">About Clubs</a></li>
+                <li><a href="#events" class="text-white hover:text-indigo-400 px-3 py-2 rounded-lg transition duration-200">Featured Events</a></li>
+                <li><a href="#calendar" class="text-white hover:text-indigo-400 px-3 py-2 rounded-lg transition duration-200">Weekly Calendar</a></li>
+                <li><a href="#gallery" class="text-white hover:text-indigo-400 px-3 py-2 rounded-lg transition duration-200">Club Highlights</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MAIN: Container for the primary content of the document -->
+    <main class="flex-grow max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- SEMANTIC SECTION: Grouping related content (Welcome/About) -->
+        <section id="welcome" class="mb-12 p-8 bg-gray-800 rounded-2xl shadow-xl border-t-4 border-gray-700">
+            <!-- Content rewritten to be generic -->
+            <h2 class="text-4xl font-bold text-indigo-400 mb-4">Discover Your Community.</h2>
+            <p class="text-gray-300 leading-relaxed mb-6">
+                Our college hosts a vibrant ecosystem of student organizations, ranging from academic and professional development groups like the Coding Club and PR Club, to social and service-based communities. Finding a club is the fastest way to build skills, make friends, and create impactful experiences on campus.
+            </p>
+            
+            <!-- Existing Content (Why Join a Club) - This is already generic and excellent -->
+            <h3 class="text-2xl font-semibold text-white mb-3">Why Join a College Club?</h3>
+            <p class="text-gray-400 mb-4">
+                As officially recognized student organizations, these groups provide valuable resources and community benefits:
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-gray-300 pl-4">
+                <li><strong class="text-indigo-400">Official Funding:</strong> Clubs receive institutional support for workshops, competitions, and trips.</li>
+                <li><strong class="text-indigo-400">Networking:</strong> Connect with alumni, faculty mentors, and professionals in various fields.</li>
+                <li><strong class="text-indigo-400">Skill Development:</strong> Gain hands-on experience in leadership, communication, and project management.</li>
+                <li><strong class="text-indigo-400">Dedicated Spaces:</strong> Access to reserved rooms and resources for meetings and events.</li>
+            </ul>
+            
+            <!-- Include an Image (using a placeholder, generic 'campus life' theme) -->
+            <img 
+                src="Gemini.png" 
+                alt="A photo showing students collaborating on a project or at a campus event." 
+                class="w-full h-480 object-cover rounded-lg shadow-lg mt-6"
+                onerror="this.onerror=null; this.src='https://placehold.co/800x400';"
+            >
+            
+        </section>
+
+        <!-- SEMANTIC SECTION: Grouping related content (Featured Events - formerly Tournaments) -->
+        <section id="events" class="mb-12">
+            <h2 class="text-4xl font-bold text-indigo-400 mb-6">Featured Club Events</h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- SEMANTIC ARTICLE: Event 1 (Example: Coding/Academic Club Focus) -->
+                <article class="bg-gray-800 p-6 rounded-xl shadow-2xl border border-indigo-600/50 hover:border-indigo-400 transition duration-300">
+                    <h3 class="text-3xl font-bold text-white mb-4">Full Stack Development Workshop</h3>
+                    
+                    <p class="text-gray-400 mb-4">
+                        Hosted by the **Coding Club**. This intensive session covers modern JavaScript frameworks and deployment strategies. No prior knowledge required!
+                    </p>
+                    
+                    <!-- Include a List (Unordered List for details) -->
+                    <h4 class="text-xl font-semibold text-indigo-500 mt-4 mb-2">Workshop Details:</h4>
+                    <ul class="list-disc list-inside space-y-1 text-gray-300 pl-4">
+                        <li>**Focus:** React basics and Node.js setup.</li>
+                        <li>**Date:** Thursday, Oct 24th, 6:00 PM.</li>
+                        <li>**Location:** Gigaspace Quad AI </li>
+                        <li>**RSVP:** Required for pizza and code samples.</li>
+                    </ul>
+                    <a href="#" class="inline-block mt-6 px-6 py-2 bg-indigo-600 text-white font-bold rounded-lg shadow-md hover:bg-indigo-700 transition duration-150">Sign Up Now &rarr;</a>
+                </article>
+
+                <!-- SEMANTIC ARTICLE: Event 2 (Example: PR/Communication Club Focus) -->
+                <article id="calendar" class="bg-gray-800 p-6 rounded-xl shadow-2xl border border-indigo-600/50 hover:border-indigo-400 transition duration-duration-300">
+                    <h3 class="text-3xl font-bold text-white mb-4">Professional Networking Mixer</h3>
+                    <p class="text-gray-400 mb-4">
+                        Organized by the **PR and Communications Clubs**. Meet industry leaders and learn how to craft your personal brand. Dress code is business casual.
+                    </p>
+                    
+                    <!-- Include a List (Ordered List for participation steps) -->
+                    <h4 class="text-xl font-semibold text-indigo-500 mt-4 mb-2">What to Bring:</h4>
+                    <ol class="list-decimal list-inside space-y-1 text-gray-300 pl-4">
+                        <li>Your professional elevator pitch (30 seconds).</li>
+                        <li>20-30 printed resumes or business cards.</li>
+                        <li>A positive attitude and desire to connect.</li>
+                    </ol>
+                    <a href="#" class="inline-block mt-6 px-6 py-2 bg-indigo-600 text-white font-bold rounded-lg shadow-md hover:bg-indigo-700 transition duration-150">View Guest Speaker List &rarr;</a>
+                </article>
+
+            </div>
+        </section>
+        
+        <!-- SEMANTIC SECTION: GALLERY (Renamed to Club Highlights) -->
+        <section id="gallery" class="mb-12">
+            <h2 class="text-4xl font-bold text-indigo-400 mb-6">Club Highlights:</h2>
+            
+            <!-- Responsive grid for photos -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                
+                <!-- Use figure and figcaption for semantic image grouping -->
+                <figure class="bg-gray-700 rounded-lg overflow-hidden shadow-xl transform transition duration-300 hover:scale-[1.03]">
+                    <img src="codeclub.jpg" alt="Students presenting code on a monitor." class="w-full h-32 md:h-48 object-cover">
+                    <figcaption class="text-center text-xs p-2 text-gray-300 font-medium">Coding Club</figcaption>
+                </figure>
+
+                <figure class="bg-gray-700 rounded-lg overflow-hidden shadow-xl transform transition duration-300 hover:scale-[1.03]">
+                    <img src="pr.jpg" alt="Group of students discussing strategy in a meeting." class="w-full h-32 md:h-48 object-cover">
+                    <figcaption class="text-center text-xs p-2 text-gray-300 font-medium">PR club</figcaption>
+                </figure>
+                
+                <figure class="bg-gray-700 rounded-lg overflow-hidden shadow-xl transform transition duration-300 hover:scale-[1.03]">
+                    <img src="OIP.webp" alt="A student speaking confidently in front of an audience." class="w-full h-32 md:h-48 object-cover">
+                    <figcaption class="text-center text-xs p-2 text-gray-300 font-medium">Communication Club </figcaption>
+                </figure>
+            </div>
+        </section>
+      
+
+</body>
+</html>
